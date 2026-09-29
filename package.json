@@ -1,0 +1,40 @@
+{
+  "name": "@lomeli-dev/opencode-steer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Native steer delivery for the OpenCode 1.18 legacy TUI",
+  "license": "MIT",
+  "author": "lomeli-dev",
+  "homepage": "https://github.com/lomeli-dev/opencode-steer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lomeli-dev/opencode-steer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lomeli-dev/opencode-steer/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "steer",
+    "agent",
+    "inject"
+  ],
+  "files": [
+    "steer-inject.tui.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./tui": "./steer-inject.tui.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18",
+    "opencode": ">=1.18.0 <2"
+  }
+}
